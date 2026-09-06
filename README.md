@@ -1,12 +1,16 @@
-# bad-dull
+<div align="center"><img src="https://img.shields.io/github/stars/neoapps-dev/bad-dull" alt="Stars"></div>
 
-Bad Apple, as an OS, in Assembly.
+<h1 align="center">bad-dull</h1>
+
+<p align="center">Bad Apple, as a bare-metal OS, in Assembly.</p>
+
+## Prerequisites
+
+* **LLVM** (`llvm-mc`, `ld.lld`)
+* **QEMU** (`qemu-system-x86_64`)
 
 ## Run
 
-Building requires NASM, install it using your package manager.
-
 ```bash
-make
-make vm # Start a QEMU VM
+make run
 ```
