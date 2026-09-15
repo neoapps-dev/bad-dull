@@ -4,7 +4,7 @@
 
 <h1 align="center">bad-dull</h1>
 
-<p align="center">Bad Apple, as a bare-metal OS, in Assembly.</p>
+<p align="center">Bad Apple, as a bare-metal OS, in Assembly. Definitely not named after my friend :3</p>
 
 ## Prerequisites
 
