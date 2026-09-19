@@ -57,7 +57,7 @@ build: clean
 
 	@printf "\n    $(CYAN)→$(RESET) Linking..\n\n"
 
-	@set -x; set -x; ld.lld -T $(SOURCE)/$(NAME)/linker.ld --oformat=binary $(BUILD)/$(NAME)/$(NAME).o -o $(BUILD)/$(NAME)/$(NAME) || { \
+	@set -x; set -x; ld.lld -m elf_i386 -T $(SOURCE)/$(NAME)/linker.ld --oformat=binary $(BUILD)/$(NAME)/$(NAME).o -o $(BUILD)/$(NAME)/$(NAME) || { \
 	    code=$$?; \
 	    printf "\n$(RED)✘$(RESET) $(BOLD)Linking Failed. Exit $$code$(RESET)\n\n"; \
 	    exit $$code; \
